@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "gift-card-app",
-      "description": "Image of the gift cards mini app",
-      "imageUrl": "https://images.unsplash.com/photo-1719662843653-29d4033e9096?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnaWZ0JTIwY2FyZCUyMHBheW1lbnR8ZW58MHx8fHwxNzYxMDc0NDQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "gift card payment"
+      "description": "A radiant blue diamond, reflecting the new brand identity.",
+      "imageUrl": "https://images.unsplash.com/photo-1610996942295-fd843b173133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxibHVlJTIwZGlhbW9uZHxlbnwwfHx8fDE3MjE0MDQ3MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue diamond"
     }
   ]
 }
