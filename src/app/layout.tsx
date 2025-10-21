@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Orbital Intro',
-  description: 'Instantly buy gift cards for your favorite brands with Worldcoin.',
+  title: 'AGT Forever',
+  description: 'Your destination for all things AGT.',
 };
 
 export default function RootLayout({

@@ -6,22 +6,40 @@ export function Logo(props: SVGProps<SVGSVGElement>) {
     <svg
       width="40"
       height="40"
-      viewBox="0 0 40 40"
-      fill="none"
+      viewBox="0 0 100 100"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
-      className={cn("text-primary", props.className)}
+      className={cn(props.className)}
     >
-      <circle cx="20" cy="20" r="18" stroke="currentColor" strokeWidth="2.5"/>
-      <circle cx="20"cy="20" r="8" stroke="currentColor" strokeWidth="2.5"/>
-      <path d="M20 2V6" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M20 34V38" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M38 20H34" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M6 20H2" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M32.4854 7.51465L29.657 10.3431" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M10.3431 29.6569L7.51471 32.4853" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M32.4854 32.4853L29.657 29.6569" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-      <path d="M10.3431 10.3431L7.51471 7.51471" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
+      <defs>
+        <linearGradient id="diamond-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: '#4299E1', stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: '#3182CE', stopOpacity: 1 }} />
+        </linearGradient>
+      </defs>
+      <g>
+        <path
+          d="M50 0 L100 50 L50 100 L0 50 Z"
+          fill="url(#diamond-gradient)"
+        />
+        <path
+          d="M50 0 L100 50 L50 100 L0 50 Z"
+          stroke="#2B6CB0"
+          strokeWidth="2"
+          fill="none"
+        />
+        <text
+          x="50"
+          y="57"
+          fontFamily="sans-serif"
+          fontSize="40"
+          fontWeight="bold"
+          fill="white"
+          textAnchor="middle"
+        >
+          AGT
+        </text>
+      </g>
     </svg>
   );
 }

@@ -37,7 +37,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <Logo className="h-8 w-8" />
             <span className="font-headline text-xl font-bold text-primary">
-              Orbital Intro
+              AGT Forever
             </span>
           </div>
           <Button>Get Started</Button>
@@ -104,7 +104,7 @@ export default function Home() {
 
       <footer className="border-t">
         <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-muted-foreground sm:flex-row md:px-6">
-          <p>&copy; {new Date().getFullYear()} Orbital Intro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} AGT Forever. All rights reserved.</p>
           <div className="flex gap-4">
              <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
              <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
