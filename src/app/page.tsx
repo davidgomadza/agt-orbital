@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Gift, ShieldCheck, Globe, Zap } from "lucide-react";
 import { Logo } from "@/components/logo";
@@ -16,7 +17,7 @@ export default function Home() {
     {
       icon: <ShieldCheck className="h-8 w-8 text-primary" />,
       title: "Secure Payments",
-      description: "Pay securely with Worldcoin, leveraging cutting-edge cryptography for your peace of mind.",
+      description: "Pay securely, leveraging cutting-edge cryptography for your peace of mind.",
     },
     {
       icon: <Globe className="h-8 w-8 text-primary" />,
@@ -40,7 +41,9 @@ export default function Home() {
               AGT Forever
             </span>
           </div>
-          <Button>Get Started</Button>
+          <Button asChild>
+            <Link href="#features">Get Started</Link>
+          </Button>
         </div>
       </header>
 
@@ -48,10 +51,10 @@ export default function Home() {
         <section className="container mx-auto px-4 py-12 text-center md:px-6 md:py-20 lg:py-24">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-              Instant Gift Cards with Worldcoin
+              The Ultimate Gift Card Marketplace
             </h1>
             <p className="mt-4 text-lg text-muted-foreground md:text-xl">
-              Buy gift cards for your favorite brands with ease. Pay securely with Worldcoin and spend them anywhere.
+              Buy, send, and manage gift cards from your favorite brands, all in one place.
             </p>
           </div>
           <div className="mt-8 flex justify-center">
@@ -60,8 +63,8 @@ export default function Home() {
                 src={giftCardImage.imageUrl}
                 alt={giftCardImage.description}
                 data-ai-hint={giftCardImage.imageHint}
-                width={345}
-                height={240}
+                width={600}
+                height={400}
                 className="rounded-xl shadow-2xl"
                 priority
               />
@@ -69,15 +72,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-card">
+        <section id="features" className="bg-card scroll-mt-20">
           <div className="container mx-auto px-4 py-12 md:px-6 md:py-20 lg:py-24">
             <div className="mx-auto max-w-5xl">
               <div className="text-center">
                 <h2 className="font-headline text-2xl font-bold tracking-tighter sm:text-3xl">
-                  About the Worldcoin Mini App Program
+                  Why Choose AGT Forever?
                 </h2>
                 <p className="mt-3 max-w-2xl mx-auto text-muted-foreground md:text-lg">
-                  Discover the features that make our gift card mini app the best way to use your Worldcoin.
+                  Discover the features that make our gift card app the best choice for all your gifting needs.
                 </p>
               </div>
               <div className="mt-12 grid gap-8 md:grid-cols-2 lg:gap-12">
